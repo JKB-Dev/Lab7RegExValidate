@@ -7,22 +7,22 @@ public class RegExValidate {
 		Scanner scan = new Scanner(System.in);
 		
 		// name validation:
-		System.out.println("Please enter a valid name: ");
+		System.out.print("Please enter a valid name: ");
 		String name = scan.nextLine();
 		System.out.println(checkName(name));
 		
 		// email validation
-		System.out.println("Please enter a valid email address: ");
+		System.out.print("Please enter a valid email address: ");
 		String email = scan.nextLine();
 		System.out.println(checkEmail(email));
 		
 		// phone number validation
-		System.out.println("Please enter a valid phone number");
+		System.out.print("Please enter a valid phone number");
 		String phone = scan.nextLine();
 		System.out.println(checkPhone(phone));
 		
 		// date validation
-		System.out.println("Please enter a valid date");
+		System.out.print("Please enter a valid date");
 		String date = scan.nextLine();
 		System.out.println(checkDate(date));
 		
@@ -62,7 +62,7 @@ public class RegExValidate {
 	public static String checkDate (String input) {
 		String invalid = "Sorry, date is not valid!";
 		String valid = "Date is valid!";
-		if (Pattern.matches("^([0-9]{2})(\\-)([0-9]{2})(\\-)([0-9]{4})$", input)) {
+		if (Pattern.matches("^([0-9]{2})(\\/)([0-9]{2})(\\/)([0-9]{4})$", input)) {
 		return valid;
 		} else {
 			return invalid;
