@@ -66,7 +66,7 @@ public class RegExValidate {
 	public static String checkDate (String input) {
 		String invalid = "Sorry, date is not valid!";
 		String valid = "Date is valid!";
-		if (Pattern.matches("^([0-9]{2})(\\/)([0-9]{2})(\\/)([0-9]{4})$", input)) {
+		if (Pattern.matches("^(0[1-9]|1[012])[- \\/.](0[1-9]|[12][0-9]|3[01])[- \\/.]((?:19|20)\\d\\d)$", input)) {
 		return valid;
 		} else {
 			return invalid;
