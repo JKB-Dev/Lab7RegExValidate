@@ -10,21 +10,25 @@ public class RegExValidate {
 		System.out.print("Please enter a valid name: ");
 		String name = scan.nextLine();
 		System.out.println(checkName(name));
+		System.out.println();
 		
 		// email validation
 		System.out.print("Please enter a valid email address: ");
 		String email = scan.nextLine();
 		System.out.println(checkEmail(email));
+		System.out.println();
 		
 		// phone number validation
-		System.out.print("Please enter a valid phone number");
+		System.out.print("Please enter a valid phone number: ");
 		String phone = scan.nextLine();
 		System.out.println(checkPhone(phone));
+		System.out.println();
 		
 		// date validation
-		System.out.print("Please enter a valid date");
+		System.out.print("Please enter a valid date: ");
 		String date = scan.nextLine();
 		System.out.println(checkDate(date));
+		System.out.println();
 		
 		scan.close();
 	}
